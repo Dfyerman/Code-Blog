@@ -1,0 +1,11 @@
+header {
+    margin-top: 5px;
+}
+
+.sun {
+    max-width: 5px;
+    max-height: 5px;
+    float: right;
+    width: 100%;
+    
+}
