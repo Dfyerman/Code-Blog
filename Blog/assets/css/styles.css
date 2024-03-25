@@ -36,7 +36,8 @@ h1 {
 
 
 .octagon {
-    size: 200%;
+    width: 100px;
+    height: 100px;
     position: relative;
 }
 
@@ -53,18 +54,10 @@ h2 {
 
 }
 
-.img-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-decoration: underline;
-  }
-
 
 img {
     max-width: 100%;
+    height: 271px;
 }
 
 .dark-mode {
@@ -79,3 +72,17 @@ input[type=image] {
     padding: 10px;
 }
 
+
+.Code-Blog-Link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-decoration: underline;
+}
+
+a {
+    color: black;
+    background-color: white;
+}
