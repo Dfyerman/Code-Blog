@@ -14,7 +14,6 @@ aside {
     text-align: center;
     margin: 1;
     border: solid black;
-    flex-wrap: wrap;
 }
 
 
@@ -32,6 +31,7 @@ nav {
 
 .octagon {
     size: 200%;
+    position: relative;
 }
 
 .sun {
@@ -53,3 +53,16 @@ h2 {
 }
 
 
+span {
+    align-content: center;
+    top:13.5em;
+    left:8.5em;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+}
