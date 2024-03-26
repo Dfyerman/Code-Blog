@@ -1,22 +1,19 @@
-const form = document.getElementById('BlogForm');
+const form = document.getElementById('form');
+const username = document.getElementById('username');
+const title = document.getElementById('title');
+const content = document.getElementById('content');
 
 form.addEventListener('submit', function(event) {
     event.preventDefault();
 
-    const Username = document.getElementById('Username').value;
-    const Title = document.getElementById('Title').value;
-    const Content = document.getElementById('Content').value;
-
-    const formData = {
-        Username: Username,
-        Title: Title,
-        Content: Content
-    };
-
-    localStorage.setItem('formData', JSON.stringify(formData));
-
-    form.reset();
-});
+    const usernameValue = username.value;
+    const titleValue = title.value;
+    const contentValue = content.value;   
 
 
-
+    localStorage.setItem('User-name', usernameValue);
+    localStorage.setItem('Title-name', titleValue);
+    localStorage.setItem('Content-name', contentValue);
+    
+    window.location.href = "blog.html";
+})
