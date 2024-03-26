@@ -73,16 +73,14 @@ input[type=image] {
 }
 
 
-.Code-Blog-Link {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-decoration: underline;
-}
+
 
 a {
     color: black;
     background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: underline;
 }
