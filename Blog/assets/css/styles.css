@@ -1,5 +1,5 @@
 .back {
-    width: 5%;
+ 
     height: 5%;
     float: left;
     padding: 10px;
@@ -20,7 +20,12 @@ aside {
 }
 
 
+footer nav{
+    overflow: auto;
+    float: center;
+    border: solid black;
 
+}
 
 
 nav {
@@ -33,7 +38,7 @@ nav {
 h1 {
     overflow: auto;
     float: right;
-    border: solid black
+    border: solid black;
 }
 
 
@@ -53,7 +58,7 @@ h1 {
 
 h2 {
     text-decoration: underline;
-
+    
 }
 
 
@@ -86,3 +91,4 @@ a {
     transform: translate(-50%, -50%);
     text-decoration: underline;
 }
+
