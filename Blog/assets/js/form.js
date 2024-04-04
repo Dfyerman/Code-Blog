@@ -1,23 +1,39 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('form');
 
-form.addEventListener('submit', function(event) {
-    event.preventDefault();
+    addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission behavior
 
-    let newBlogs = oldBlogs.push();
-    let oldBlogs = JSON.parse(localStorage.getItem('Blog'));
+        let usernameValue = document.getElementById('username').value;
+        let titleValue = document.getElementById('title').value;
+        let contentValue = document.getElementById('content').value;
 
+        localStorage.setItem('User-name', usernameValue);
+        localStorage.setItem('Title-name', titleValue);
+        localStorage.setItem('Content-name', contentValue);
 
-    let usernameValue = username.value;
-    let titleValue = title.value;
-    let contentValue = content.value;   
+        const newPost = document.createElement('div');
+        newPost.classList.add('post');
 
-    localStorage.setItem('User-name', usernameValue);
-    localStorage.setItem('Title-name', titleValue);
-    localStorage.setItem('Content-name', contentValue);
+        const postTitle = document.createElement('h2');
+        postTitle.textContent = titleValue;
 
-    
-    
+        const postContent = document.createElement('p');
+        postContent.textContent = contentValue;
 
-    window.location.href = "blog.html";
+        const postAuthor = document.createElement('p');
+        postAuthor.textContent = `By: ${usernameValue}`;
+
+        newPost.appendChild(postTitle);
+        newPost.appendChild(postContent);
+        newPost.appendChild(postAuthor);
+
+        document.body.appendChild(newPost);
+
+        document.getElementById('username').value = '';
+        document.getElementById('title').value = '';
+        document.getElementById('content').value = '';
+
+        window.location.href = "blog.html"; // Redirect to the blog page
+    });
 });
-
-

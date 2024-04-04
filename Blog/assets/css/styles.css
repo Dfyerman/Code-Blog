@@ -92,3 +92,7 @@ a {
     text-decoration: underline;
 }
 
+button {
+    width: 40px;
+    height: 40px;
+}
