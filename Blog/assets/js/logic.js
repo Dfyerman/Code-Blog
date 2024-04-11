@@ -1,6 +1,6 @@
 const oldBlogs = JSON.parse(localStorage.getItem('Blog'))||[];
     oldBlogs.forEach(blog => {
-        const container = document.createElement('div');
+        const container = document.createElement('div2');
         const title = document.createElement('p1');
         const content = document.createElement('p2');
         const username = document.createElement('p3');

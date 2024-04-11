@@ -15,7 +15,8 @@ form.addEventListener('submit', function(event) {
     let newBlog = {
         username: username.value,
         title: title.value,
-        content: content.value
+        content: content.value,
+        
     }
     
     oldBlogs.push(newBlog);

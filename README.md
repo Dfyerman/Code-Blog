@@ -10,5 +10,5 @@ Usage: Post Blogs
 git
 
 Credits:
-![Code-Blog](./Blog/assets/Images/Blog.pdf)
+![Code-Blog](./Blog/assets/Images/Screenshot_10-4-2024_1763_.jpeg)
 © 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
